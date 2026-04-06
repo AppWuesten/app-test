@@ -2,8 +2,11 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Apps</title>
+  <title>ZeitManager</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZeitManager – einfache Zeiterfassung und Urlaubsplanung für iOS">
+
+  <link rel="icon" href="favicon.png">
 
   <style>
     body {
@@ -21,22 +24,32 @@
       padding: 20px;
     }
 
+    img.icon {
+      width: 120px;
+      border-radius: 22px;
+      margin-bottom: 20px;
+    }
+
     h1 {
       font-size: 2em;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 1.1em;
+      line-height: 1.5;
     }
 
     .buttons a {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
+      margin: 20px 0;
       text-decoration: none;
-      border-radius: 8px;
-      background-color: #007aff;
-      color: white;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
     }
 
     .qr {
@@ -58,18 +71,31 @@
 
 <body>
   <div class="container">
+
+    <!-- App Icon -->
+    <img src="AppIcon-iOS-Default-1024x1024@2x.png" alt="App Icon" class="icon">
+
     <h1>ZeitManager</h1>
+    
     <p>iOS App die als Stempeluhr für den Arbeitsalltag dient und gleichzeitig auch</p>
     <p>einen Überblick über das ganze Kalenderjahr liefert. Inklusive einer</p>
     <p>Urlaubsplanung und der Anzeige von Schulferien.</p>
 
-  <div class="buttons">
-    <a href="#" target="_blank"> <!-- Später # ersetzen durch: https://apps.apple.com/app/idXXXXXXXX -->
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-         alt="Download im App Store" height="50">
-    </a>
-  </div>
+    <!-- App Store Button -->
+    <div class="buttons">
+      <a href="#" target="_blank"> <!-- Später # ersetzen durch: https://apps.apple.com/app/idXXXXXXXX -->
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+           alt="Download im App Store" height="50">
+      </a>
+    </div>
 
+    <!-- Screenshots -->
+    <div class="screenshots">
+      <img src="Simulator Screenshot - iPhone 17 Pro - 2026-04-06 at 19.06.47.png" alt="Screenshot 1">
+      <img src="Simulator Screenshot - iPhone 17 Pro - 2026-04-06 at 19.07.23.png" alt="Screenshot 2">
+    </div>
+
+    <!-- QR Code -->
     <div class="qr">
       <p>QR-Code scannen:</p>
       <img src="qr-code.png" alt="QR Code zur App" width="150">
