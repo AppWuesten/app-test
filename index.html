@@ -18,6 +18,24 @@
       color: #333;
     }
 
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 60px;
+      border-radius: 14px;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+    
     .container {
       max-width: 600px;
       margin: 50px auto;
@@ -45,11 +63,19 @@
       margin: 20px 0;
       text-decoration: none;
     }
-
+    
+    .screenshots {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    
     .screenshots img {
-      width: 100%;
+      width: 45%;
+      max-width: 220px;
       border-radius: 12px;
-      margin-top: 15px;
     }
 
     .qr {
@@ -73,13 +99,16 @@
   <div class="container">
 
     <!-- App Icon -->
-    <img src="AppIcon-iOS-Default-1024x1024@2x.png" alt="App Icon" class="icon">
-
-    <h1>ZeitManager</h1>
+    <div class="header">
+      <img src="AppIcon-iOS-Default-1024x1024@2x.png" alt="App Icon">
+      <h1>ZeitManager</h1>
+    </div>
     
-    <p>iOS App die als Stempeluhr für den Arbeitsalltag dient und gleichzeitig auch</p>
-    <p>einen Überblick über das ganze Kalenderjahr liefert. Inklusive einer</p>
+    <p>iOS App, die als Stempeluhr für den Arbeitsalltag dient und gleichzeitig</p>
+    <p>auch einen Überblick über das ganze Kalenderjahr liefert. Inklusive einer</p>
     <p>Urlaubsplanung und der Anzeige von Schulferien.</p>
+    <p>Sie ist auch von mehreren Personen nutzbar und einzelne Daten lassen sich</p>
+    <p>optional freigeben.</p>
 
     <!-- App Store Button -->
     <div class="buttons">
