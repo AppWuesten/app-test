@@ -2,19 +2,78 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine App</title>
+  <title>Meine Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f5f5f7;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      background-color: #007aff;
+      color: white;
+    }
+
+    .qr {
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #555;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Meine App</h1>
-  <p>Willkommen auf meiner Webseite.</p>
+  <div class="container">
+    <h1>ZeitManager</h1>
+    <p>Diese App dient zum...</p>
 
-  <h2>Download</h2>
-  <ul>
-    <li><a href="#">App Store</a></li>
-    <li><a href="#">Google Play</a></li>
-  </ul>
+    <div class="buttons">
+      <a href="#">Download im App Store</a>
+    </div>
 
-  <p><a href="impressum.html">Impressum</a></p>
-  <p><a href="datenschutz.html">Datenschutz</a></p>
+    <div class="qr">
+      <p>QR-Code scannen:</p>
+      <img src="qr-code.png" alt="QR Code zur App" width="150">
+    </div>
+
+    <footer>
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+  </div>
 </body>
 </html>
