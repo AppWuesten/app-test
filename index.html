@@ -67,9 +67,34 @@
     .screenshots {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
+      gap: 30px;
+      margin-top: 40px;
       flex-wrap: wrap;
+    }
+
+    .phone {
+      position: relative;
+      width: 180px;
+      transition: transform 0.2s ease;
+    }
+
+    .phone.hover {
+      transform: translateY(-5px);
+    }
+
+    .phone .frame {
+      width: 100%;
+      display: block;
+    }
+
+    .phone .screen {
+      position: absolute;
+      top: 6%;
+      left: 7%;
+      width: 86%;
+      height: 88%;
+      object-fit: cover;
+      border-radius: 20px;
     }
     
     .screenshots img {
@@ -119,10 +144,16 @@
       </a>
     </div>
 
-    <!-- Screenshots -->
     <div class="screenshots">
-      <img src="Simulator Screenshot - iPhone 17 Pro - 2026-04-06 at 19.06.47.png" alt="Screenshot 1">
-      <img src="Simulator Screenshot - iPhone 17 Pro - 2026-04-06 at 19.07.23.png" alt="Screenshot 2">
+      <div class="phone">
+        <img class="frame" src="iphone-frame.png" alt="">
+        <img class="screen" src="screenshot1.png" alt="Screenshot 1">
+      </div>
+
+      <div class="phone">
+        <img class="frame" src="iphone-frame.png" alt="">
+        <img class="screen" src="screenshot2.png" alt="Screenshot 2">
+      </div>
     </div>
 
     <!-- QR Code -->
