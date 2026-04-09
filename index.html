@@ -18,6 +18,13 @@
       color: #333;
     }
 
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    /* Header mit Icon + Titel */
     .header {
       display: flex;
       align-items: center;
@@ -35,23 +42,6 @@
       font-size: 1.8em;
       margin: 0;
     }
-    
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-
-    img.icon {
-      width: 120px;
-      border-radius: 22px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
 
     p {
       font-size: 1.1em;
@@ -63,7 +53,8 @@
       margin: 20px 0;
       text-decoration: none;
     }
-    
+
+    /* Screenshots */
     .screenshots {
       display: flex;
       justify-content: center;
@@ -76,8 +67,9 @@
       width: 140px;
       border-radius: 22px;
       background: white;
-      psdding: 5px;
-      box-shadows: 0 10px 25px rgba(0,0,0,0.15);
+      padding: 5px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
     }
 
     .screenshots img:hover {
@@ -104,29 +96,30 @@
 <body>
   <div class="container">
 
-    <!-- App Icon -->
+    <!-- Header -->
     <div class="header">
-      <img src="AppIcon-iOS-Default-1024x1024@2x.png" alt="App Icon">
+      <img src="app-icon.png" alt="App Icon">
       <h1>ZeitManager</h1>
     </div>
-    
-    <p>iOS App, die als Stempeluhr für den Arbeitsalltag dient und gleichzeitig</p>
-    <p>auch einen Überblick über das ganze Kalenderjahr liefert. Inklusive einer</p>
-    <p>Urlaubsplanung und der Anzeige von Schulferien.</p>
-    <p>Sie ist auch von mehreren Personen nutzbar und einzelne Daten lassen sich</p>
-    <p>optional freigeben.</p>
+
+    <p>
+      Einfache Zeiterfassung für deinen Arbeitsalltag.
+      Behalte dein Jahr im Blick – inklusive Urlaubsplanung
+      und Schulferienübersicht.
+    </p>
 
     <!-- App Store Button -->
     <div class="buttons">
-      <a href="#" target="_blank"> <!-- Später # ersetzen durch: https://apps.apple.com/app/idXXXXXXXX -->
+      <a href="#" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-           alt="Download im App Store" height="50">
+             alt="Download im App Store" height="50">
       </a>
     </div>
 
+    <!-- Screenshots -->
     <div class="screenshots">
-      <img class="screen" src="screenshot1.png" alt="Screenshot 1">
-      <img class="screen" src="screenshot2.png" alt="Screenshot 2">
+      <img src="screenshot1.png" alt="Screenshot 1">
+      <img src="screenshot2.png" alt="Screenshot 2">
     </div>
 
     <!-- QR Code -->
@@ -139,6 +132,7 @@
       <a href="impressum.html">Impressum</a> |
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
+
   </div>
 </body>
 </html>
