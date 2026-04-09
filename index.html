@@ -73,12 +73,88 @@ h1 {
   padding: 8px 14px;
   border-radius: 20px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   transition: all 0.2s ease;
 }
 
 .device-switch button.active {
   background: #007aff;
   color: white;
+}
+
+/* ICON BASE */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* iPhone */
+.icon.iphone {
+  border-radius: 4px;
+}
+
+.icon.iphone::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 4px;
+  height: 1px;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+/* iPad (klar als Tablet!) */
+.icon.ipad {
+  width: 18px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.icon.ipad::after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Watch */
+.icon.watch {
+  width: 14px;
+  height: 14px;
+  border-radius: 6px;
+}
+
+.icon.watch::before,
+.icon.watch::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  background: currentColor;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon.watch::before {
+  top: -4px;
+  border-radius: 2px;
+}
+
+.icon.watch::after {
+  bottom: -4px;
+  border-radius: 2px;
 }
 
 /* Screenshot Scroll */
@@ -144,17 +220,22 @@ footer a {
 
   <!-- DEVICE SWITCH -->
   <div class="device-switch">
-  <button class="active" onclick="showDevice('iphone', event)">
-    📱 iPhone
-  </button>
-  <button onclick="showDevice('ipad', event)">
-    💻 iPad
-  </button>
-  <button onclick="showDevice('watch', event)">
-    ⌚ Watch
-  </button>
-</div>
+    <button class="active" onclick="showDevice('iphone', event)">
+      <span class="icon iphone"></span>
+      iPhone
+    </button>
 
+    <button onclick="showDevice('ipad', event)">
+      <span class="icon ipad"></span>
+      iPad
+    </button>
+
+    <button onclick="showDevice('watch', event)">
+      <span class="icon watch"></span>
+      Watch
+    </button>
+  </div>
+  
   <!-- SCREENSHOTS -->
   <div id="iphone" class="screenshot-container">
     <img src="Simulator Screenshot - iPhone 17 Pro - 2026-04-06 at 19.06.47.png">
