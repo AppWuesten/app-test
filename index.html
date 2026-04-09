@@ -35,15 +35,23 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0;
+  font-size: 2.2em;
+  <!--margin: 0;-->
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.6em;
+  }
 }
 
 /* Text */
 .subtitle {
-  margin-top: 15px;
+  margin: 20px auto;
   font-size: 1.2em;
   color: #555;
+  max-width: 500px;
+  line-height: 1.6;
 }
 
 /* Button */
